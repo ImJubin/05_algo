@@ -19,8 +19,5 @@ for tc in range(1, T+1):
             count += 1
         if (grass[i] == '(') and (grass[i+1] == ')'):
             count += 1
-
-
-
     
     print(f'#{tc} {count}')
