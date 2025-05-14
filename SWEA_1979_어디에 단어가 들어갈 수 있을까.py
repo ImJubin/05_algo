@@ -26,10 +26,12 @@ for tc in range(1, T+1):
         for j in range(N):
             if puzzle[i][j] == 1:
                 length += 1
+
             else:
                 if length == K:
                     cnt += 1
                 length=0
+
         if length == K:
             cnt += 1
 
@@ -44,5 +46,5 @@ for tc in range(1, T+1):
                 length=0    #그 다음 0 초기화
         if length == K:
             cnt += 1
-
+       
     print(f'#{tc} {cnt}')
